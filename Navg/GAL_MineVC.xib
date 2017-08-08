@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GAL_MineVC" customModule="Navg" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="xibView" destination="tgR-aM-t4x" id="R32-Xq-AjW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tgR-aM-t4x">
+                    <rect key="frame" x="67" y="242" width="240" height="128"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzm-fl-tc3">
+                            <rect key="frame" x="80" y="33" width="80" height="62"/>
+                            <color key="backgroundColor" red="0.9529411793" green="0.68627452850000004" blue="0.13333334029999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="按钮">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="Click:" destination="-1" eventType="touchUpInside" id="8Dh-6m-HtZ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.60373906746662209" green="1" blue="0.55944117312889552" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="bzm-fl-tc3" secondAttribute="bottom" constant="33" id="4Z9-D3-47v"/>
+                        <constraint firstItem="bzm-fl-tc3" firstAttribute="top" secondItem="tgR-aM-t4x" secondAttribute="top" constant="33" id="Qk7-wI-vse"/>
+                        <constraint firstItem="bzm-fl-tc3" firstAttribute="leading" secondItem="tgR-aM-t4x" secondAttribute="leading" constant="80" id="iA4-9H-g3X"/>
+                        <constraint firstAttribute="trailing" secondItem="bzm-fl-tc3" secondAttribute="trailing" constant="80" id="sKW-Bv-gpx"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="tgR-aM-t4x" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2gS-4Q-fpt"/>
+                <constraint firstAttribute="bottom" secondItem="tgR-aM-t4x" secondAttribute="bottom" constant="297" id="MS9-9O-zOx"/>
+                <constraint firstItem="tgR-aM-t4x" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="67" id="oLF-4K-Dkh"/>
+                <constraint firstItem="tgR-aM-t4x" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="242" id="uke-Py-sBj"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="86.5"/>
+        </view>
+    </objects>
+</document>
