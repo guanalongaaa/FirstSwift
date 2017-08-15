@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+import SwiftyJSON
 
 let kScreenHeight = UIScreen.main.bounds.size.height
 let kScreenWidth = UIScreen.main.bounds.size.width
@@ -38,4 +39,16 @@ let kSectionColor = RGBA(r: 0.94, g: 0.94, b: 0.96, a: 1.00)
 // 导航栏背景颜色
 let kNavBarBgColor = normalRGBA(r: 20, g: 20, b: 20, a: 0.9)
 
+
+// MARK:- 自定义打印方法
+func GALLog<T>(_ message : T, file : String = #file, funcName : String = #function, lineNum : Int = #line) {
+    
+    #if DEBUG
+        
+        let fileName = (file as NSString).lastPathComponent
+        
+        print("\(fileName):(\(lineNum))-\(message)")
+        
+    #endif
+}
 

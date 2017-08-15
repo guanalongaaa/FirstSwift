@@ -17,6 +17,8 @@ class GAL_FinancialVC: UIViewController {
         
         setUI()
         
+        
+        
 //        864,327  1080,302  432,220
         
         // Do any additional setup after loading the view.

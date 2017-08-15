@@ -9,7 +9,6 @@
 import UIKit
 
 
-
 class GAL_TabBar: UITabBarController {
 
 //    func RGBA (r:CGFloat, g:CGFloat, b:CGFloat, a:CGFloat) -> UIColor {

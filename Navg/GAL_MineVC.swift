@@ -38,6 +38,7 @@ class GAL_MineVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         NSLog("传值name = %@", name)
+        NSLog("name的长度%d",name.characters.count)
     }
     
     @IBAction func Click(_ sender: UIButton) {
@@ -53,6 +54,9 @@ class GAL_MineVC: UIViewController {
 //            xibView.backgroundColor = #colorLiteral(red: 0.9411764741, green: 0.4980392158, blue: 0.3529411852, alpha: 1)
 //            isred = true
 //        }
+        
+        
+        
         
         sender.isSelected = !sender.isSelected
         
@@ -75,6 +79,17 @@ class GAL_MineVC: UIViewController {
     }
 
 
+//    extension UIViewController {
+//        
+//        var hom:UIViewController{
+//            get {
+//                return (UIApplication.shared.keyWindow!.rootViewController!)
+//            }
+//        }
+//        
+//    }
+
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
